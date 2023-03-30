@@ -9,13 +9,12 @@ import Dots from "../../assets/svg/Dots";
 
 export default function Header() {
   return (
-    <Wrapper id="home" className="container flexSpaceCenter">
+    <Wrapper id="home" className="container_stop flexSpaceCenter" style={{backgroundImage: `url("https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80")`}}>
       <LeftSide className="flexCenter">
+      <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_bvvejzaz.json"  background="transparent"  speed="1" 
+ style={{width: 500, height: 500 }} loop autoplay></lottie-player>
         <div>
-          <h1 className="extraBold font60" style={{color:'#03844e',fontSize: 60,fontWeight:900}}>Adansi @10!</h1>
-          <HeaderP className="font50 semiBold" style={{fontSize: 30,color:'#f99f1b'}}>
-           Its A Vibe!
-          </HeaderP>
+        
         </div>
       </LeftSide>
       <RightSide>
@@ -40,7 +39,7 @@ export default function Header() {
             <Dots />
           </DotsWrapper>*/}
         </ImageWrapper> 
-        <GreyDiv className="lightBg"></GreyDiv>
+        
       </RightSide>
     </Wrapper>
   );

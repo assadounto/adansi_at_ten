@@ -3,6 +3,7 @@ import styled from "styled-components";
 // Components
 import FullButton from "../Buttons/FullButton";
 // Assets
+import logo from '../../assets/img/add/1.png'
 import RollerIcon from "../../assets/svg/Services/RollerIcon";
 import MonitorIcon from "../../assets/svg/Services/MonitorIcon";
 import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
@@ -41,7 +42,8 @@ export default function PricingTable({ icon, price, title, text,  offers, action
         <p className="font13">{text}</p>
       </div>
       <div>
-        {offers
+      <img src={logo} />
+        {/* {offers
           ? offers.map((item, index) => (
               <div className="flexNullCenter" style={{ margin: "15px 0" }} key={index}>
                 <div style={{ position: "relative", top: "-1px", marginRight: "15px" }}>
@@ -56,11 +58,9 @@ export default function PricingTable({ icon, price, title, text,  offers, action
                 <p className="font20 extraBold">{item.name}</p>
               </div>
             ))
-          : null}
+          : null} */}
       </div>
-      <div style={{ maxWidth: "120px", margin: "30px auto 0 auto" }}>
-        <FullButton title="Buy" action={action} />
-      </div>
+      
     </Wrapper>
   );
 }

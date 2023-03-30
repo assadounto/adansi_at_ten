@@ -9,51 +9,35 @@ import AddImage1 from "../../assets/img/add/1.png";
 import AddImage2 from "../../assets/img/add/2.png";
 import AddImage3 from "../../assets/img/add/3.png";
 import AddImage4 from "../../assets/img/add/4.png";
+import Pricing from "./Pricing";
 
 export default function Services() {
   return (
     <Wrapper id="services">
       <div className="lightBg" style={{ padding: "50px 0" }}>
         <div className="container">
-          <ClientSlider />
+          {/* <ClientSlider /> */}
+          <h1 className="extraBold font60" style={{color:'#03844e',fontSize: 60,fontWeight:900,textAlign:'center'}}>Adansi @10!</h1>
+          {/* <HeaderP className="font50 semiBold" style={{fontSize: 30,color:'#f99f1b'}}>
+           Its A Vibe!
+          </HeaderP> */}
+            <h1 className="font40 extraBold" style={{textAlign:'center'}}>It's a Vibe</h1>
         </div>
       </div>
       <div className="whiteBg" style={{ padding: "60px 0" }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Services</h1>
+          
             <p className="font13">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, accusamus consequatur. Rerum temporibus nulla accusantium tempora aliquam quasi exercitationem, veritatis, illum possimus reprehenderit odio. Eaque odit est fugit ullam eligendi!
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur rem harum, unde, recusandae blanditiis hic officia dolorem quibusdam natus amet quod? Quidem doloremque molestiae at cumque doloribus ab, nihil tempora.
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              labore et dolore magna aliquyam erat, sed diam voluptua. lo
             </p>
           </HeaderInfo>
-          <ServiceBoxRow className="flex">
-            <ServiceBoxWrapper>
-              <ServiceBox
-                icon="roller"
-                title="Graphic Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-              />
-            </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
-              <ServiceBox
-                icon="monitor"
-                title="Web Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
-              />
-            </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
-              <ServiceBox
-                icon="browser"
-                title="Development"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
-              />
-            </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Print" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
-            </ServiceBoxWrapper>
-          </ServiceBoxRow>
+          <div ><Pricing/></div>
+        
         </div>
         <div className="lightBg">
           <div className="container">
