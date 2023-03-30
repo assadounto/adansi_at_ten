@@ -12,19 +12,19 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">We are Digital Agency.</h1>
-          <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          <h1 className="extraBold font60" style={{color:'#03844e',fontSize: 60,fontWeight:900}}>Adansi @10!</h1>
+          <HeaderP className="font50 semiBold" style={{fontSize: 30,color:'#f99f1b'}}>
+           Its A Vibe!
           </HeaderP>
-          <BtnWrapper>
-            <FullButton title="Get Started" />
-          </BtnWrapper>
         </div>
       </LeftSide>
       <RightSide>
-        <ImageWrapper>
-          <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} />
+     
+       <ImageWrapper>
+       
+<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_bvvejzaz.json"  background="transparent"  speed="1" 
+ style={{width: 500, height: 500 }} loop autoplay></lottie-player>
+          {/*  <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} />
           <QuoteWrapper className="flexCenter darkBg radius8">
             <QuotesWrapper>
               <QuotesIcon />
@@ -38,8 +38,8 @@ export default function Header() {
           </QuoteWrapper>
           <DotsWrapper>
             <Dots />
-          </DotsWrapper>
-        </ImageWrapper>
+          </DotsWrapper>*/}
+        </ImageWrapper> 
         <GreyDiv className="lightBg"></GreyDiv>
       </RightSide>
     </Wrapper>
