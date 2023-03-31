@@ -1,10 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function ProjectBox({ img, title, text, action}) {
+export default function ProjectBox({id, img, title, text, action}) {
+  const [userOption, setUserOption] = React.useState('');
+   
+  const selectHandler = (value) => {
+    action(value);
+    setUserOption(value);
+  };
   return (
-    <Wrapper>
-      <ImgBtn className="aniamte pointer" style={{width:300,hieght:80}} onClick={action ? () => action() : null}>
+    <Wrapper key={id}>
+      <ImgBtn className="aniamte pointer" style={{width:300,hieght:80}} onClick={()=>selectHandler({
+        title,
+        img,
+        text
+      })}>
         <img className="radius8" src={img} alt="project"></img>
         <h3 className="font20 extraBold" >{title}</h3>
       <p className="font13" >{text}</p>

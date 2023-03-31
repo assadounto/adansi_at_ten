@@ -6,7 +6,7 @@ import FullButton from "../Buttons/FullButton";
 // Assets
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import ClientSlider from "../Elements/ClientSlider";
+import PackageSlider from "../Elements/PackageSlider";
 import ProjectImg1 from "../../assets/img/projects/1.png";
 import ProjectImg2 from "../../assets/img/projects/2.png";
 import ProjectImg3 from "../../assets/img/projects/3.png";
@@ -14,7 +14,7 @@ import ProjectImg4 from "../../assets/img/projects/4.png";
 import ProjectImg5 from "../../assets/img/projects/5.png";
 import ProjectImg6 from "../../assets/img/projects/6.png";
 import AddImage2 from "../../assets/img/add/add2.png";
-
+import Dubia from "../../Data";
 
 // const items = [
 //   <img src="path-to-img" onDragStart={handleDragStart} role="presentation" />,
@@ -66,8 +66,8 @@ export default function Projects() {
               labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
           </HeaderInfo>
-          <ClientSlider/>
-          <ClientSlider/>
+          <PackageSlider data={Dubia}/>
+          {/* <ClientSlider/> */}
         
           <div className="row flexCenter">
             <div style={{ margin: "50px 0", width: "200px" }}>
